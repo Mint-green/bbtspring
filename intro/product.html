@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>百步梯春季招新</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/bintro.css">
+    <!-- <meta name="viewport" content="user-scalable=no"> -->
+</head>
+
+<body>
+    <!-- <h1>百步梯</h1> -->
+    <img id="turnleft" onclick="turnleft()" src="../source/png/turnleft.png">
+    <img id="turnright" onclick="turnright()" src="../source/png/turnright.png">
+    <div id="imgbox"><img src="../source/png/标题/产运部.png" width="60%" height="20%"></div>
+    <div id="text">
+        <p>
+        </p>
+    </div>
+    <div id="allbutton">
+        <button onclick="turnenroll()">马上报名</button>
+        <button onclick="turnintro()" class="diff">返回</button>
+    </div>
+    <div id="rabbit"><img src="../source/png/rabbit-right.png" width="40%" height="40%"></div>
+</body>
+<script>
+    function turnenroll() {
+        window.location.href = "../enroll.html";
+    }
+    function turnintro() {
+        window.location.href = "../apart.html";
+    }
+    function turnleft() {
+        location.href = "program.html";
+    }
+    function turnright() {
+        location.href = "tech.html";
+    }
+</script>
+
+</html>

@@ -1,0 +1,121 @@
+html
+{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+body
+{
+    margin: 0;
+    height: 100%;
+    background: url("../source/png/backgroud1.png") fixed;
+    background-size: cover;
+    /* background-size: 100%; */
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#imgbox
+{
+    /* width: 100%; */
+    text-align: center;
+    margin-top: 15%;
+    /* position: absolute; */
+    /* top: 10%; */
+    /* left: auto; */
+    /* right: auto; */
+}
+
+p
+{
+    font-family: "SimHei";
+    /* font-weight: bold; */
+    font-weight: 600;
+    font-size: 15px;
+    color: #333333;
+    line-height: 24px;
+    /* margin-top: 20px; */
+    height: auto;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    /* position: absolute; */
+    /* top: 13%; */
+    /* left: auto; */
+    /* right: auto; */
+}
+/* #text */
+/* { */
+    /* position: absolute; */
+    /* top: 20%; */
+/* } */
+#allbutton
+{
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    margin-left: 30%;
+}
+.buttonbox
+{
+    text-align: center;
+}
+button
+{
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* margin-right: 100px; */
+    margin-top: 20px;
+    width: 152px;
+    height: 48px;
+    font-size: 24px;
+    background-color: rgb(65,183,81);
+    border: solid rgb(7, 108, 60) 2px;
+    border-radius: 10px;
+    color: rgb(255,255,255);
+}
+.diff
+{
+    border: solid rgb(65,183,81) 2px;
+    background-color: rgb(167,215,204);
+}
+#rabbit
+{
+    position: relative;
+    z-index: 1;
+    
+    margin-top:15%;
+    left:60%;
+}
+/* #turnpage
+{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: auto;
+} */
+#turnleft
+{
+    position: absolute;
+    width: 25px;
+    height: auto;
+    /* margin-right: auto; */
+    /* margin-left: 3%; */
+    left: 3%;
+    top: 48%;
+}
+#turnright
+{
+    position: absolute;
+    width: 25px;
+    height: auto;
+    /* margin-left: auto; */
+    /* margin-right: 3%; */
+    right: 3%;
+    top: 48%;
+}

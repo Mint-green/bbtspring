@@ -1,0 +1,66 @@
+html
+{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+body
+{
+    margin: 0;
+    overflow-x: hidden;
+    background: url("../source/png/backgroud1.png") fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: top; 
+}
+.bg{
+    position: fixed;
+    top:0;
+    background-size:contain;      
+    width:100%;  
+    height: auto;      
+}
+
+.move img{
+    position: relative;
+    right:10%;
+}
+.move{
+    width:150%;
+}
+.pic1{
+    position: relative;
+    
+    animation:mysec 0.75s;
+    -moz-animation:myfirst 0.75s; /* Firefox */
+    -webkit-animation:myfirst 0.75s; /* Safari and Chrome */
+    -o-animation:myfirst 0.75s; /* Opera */
+}
+@keyframes myfirst
+{
+0%   {left:50%; }
+
+/*50%  {left:25%; }*/
+
+100% {left:-10%;}
+}
+
+.pic2{
+    position: relative;
+    
+    animation:mysec 0.75s;
+    -moz-animation:mysec 0.75s; /* Firefox */
+    -webkit-animation:mysec 0.75s; /* Safari and Chrome */
+    -o-animation:mysec 0.75s; /* Opera */
+}
+
+@keyframes mysec
+{
+    0%   {right:50%; }
+    
+   
+}
+
+
+

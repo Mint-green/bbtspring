@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+         minimum-scale=1.0, maximum-scale=2.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/baibuti.css" />
+    <title>百步梯春招查询</title>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.1.1/jquery.min.js"></script> -->
+    <script src="js/baibuti.js"></script>
+    <script src="js/enroll.js"></script>
+</head>
+
+<body onload="load()">
+    <div id="titleOfQuery">百步梯春招报名表</div>
+
+    <div id="showName" class="rowOfQuery">
+        <div class="leftOfQuery">姓名</div>
+        <div id="name" class="rightOfQuery"></div>
+    </div>
+    <div id="showGender" class="rowOfQuery">
+        <div class="leftOfQuery">性别</div>
+        <div class="rightOfQuery2">
+            <label for="male">男</label>
+        </div>
+        <div class="rightOfQuery3">
+            <label for="female">女</label>
+        </div>
+    </div>
+
+    <div class="gouAndRadio">
+        <img src="source/png/tick2.0.png" class="gou" id="maleGou">
+        <input type="radio" name="gender" id="male" class="radio" value="0" onchange="showGenderGou()" disabled>
+    </div>
+    <img src="source/png/tick2.0.png" class="gou" id="femaleGou">
+    <input type="radio" name="gender" id="female" class="radio" value="1" onchange="showGenderGou()" disabled>
+
+
+
+
+
+    <div id="showGrade" class="rowOfQuery">
+        <div class="leftOfQuery">年级</div>
+        <div class="rightOfQuery2">
+            <label for="gradeOne">大一</label>
+        </div>
+        <div class="rightOfQuery3">
+            <label for="gradeTwo">大二</label>
+        </div>
+    </div>
+
+
+    <div class="gouAndRadio">
+        <img src="source/png/tick2.0.png" class="gou" id="gradeOneGou">
+        <input type="radio" name="grade" id="gradeOne" class="radio" value="0" onchange="showGradeGou()" disabled>
+    </div>
+
+    <img src="source/png/tick2.0.png" class="gou" id="gradeTwoGou">
+    <input type="radio" name="grade" id="gradeTwo" class="radio" value="1" onchange="showGradeGou()" disabled>
+
+
+
+    <div id="showCollege" class="rowOfQuery">
+        <div class="leftOfQuery">学院</div>
+        <div id="college" class="rightOfQuery"></div>
+    </div>
+    <div id="showDormitory" class="rowOfQuery">
+        <div class="leftOfQuery">宿舍</div>
+        <div id="dormitory" class="rightOfQuery"></div>
+    </div>
+    <div id="showPhone" class="rowOfQuery">
+        <div class="leftOfQuery">手机</div>
+        <div id="phone" class="rightOfQuery"></div>
+    </div>
+    <div id="showFirst" class="rowOfQuery">
+        <div class="leftOfQuery">第一志愿</div>
+        <div id="first" class="rightOfQuery"></div>
+    </div>
+    <div id="showSecond" class="rowOfQuery">
+        <div class="leftOfQuery">第二志愿</div>
+        <div id="second" class="rightOfQuery"></div>
+    </div>
+    <div id="showAdjust" class="rowOfQuery">
+        <div class="leftOfQuery">服从调剂</div>
+        <div class="rightOfQuery2">
+            <label for="adjustYes">是</label>
+        </div>
+        <div class="rightOfQuery3">
+            <label for="adjustNo">否</label>
+        </div>
+    </div>
+
+    <div class="gouAndRadio">
+        <img src="source/png/tick2.0.png" class="gou" id="adjustYesGou">
+        <input type="radio" name="adjust" id="adjustYes" class="radio" value="0" onchange="showAdjustGou()" disabled>
+    </div>
+    <img src="source/png/tick2.0.png" class="gou" id="adjustNoGou">
+    <input type="radio" name="adjust" id="adjustNo" class="radio" value="1" onchange="showAdjustGou()" disabled>
+
+
+    <div id="showIntroduction" class="rowOfQuery">
+        <div class="leftOfQuery2">个人简介(选填)</div>
+    </div>
+    <textarea id="introduction" spellcheck="false" disabled></textarea>
+    <button type="button" class="buttonUpOfQuery" onclick="edit()" id="edit">编辑</button>
+    <button type="button" class="buttonDownOfQuery" onclick="javascript:history.back()" id="back">返回</button>
+
+</body>
+
+</html>

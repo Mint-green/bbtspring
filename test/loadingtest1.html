@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>loading</title>
+    <!--页面加载start-->
+    <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="loader1.css">
+
+    <script type="text/javascript">
+        // 等待所有加载
+        $(window).load(function () {
+            $('body').addClass('loaded');
+            $('#loader-wrapper .load_title').remove();
+        }); 
+    </script>
+</head>
+
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+        <div class="load_title">正在加载LoveFeel站点<br><span>V1.0</span></div>
+    </div>
+
+</html>
