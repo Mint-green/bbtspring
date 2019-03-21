@@ -12,8 +12,10 @@ body
     background: url("../source/png/backgroud3.png") fixed;
     background-size: cover;
     /* background-size: 100%; */
-    background-position: top;
-    /* background-repeat: no-repeat; */
+    /* background-position: top; */
+    background-position-y: top;
+    background-position-x: center;
+    background-repeat: no-repeat;
 }
 #imgbox
 {

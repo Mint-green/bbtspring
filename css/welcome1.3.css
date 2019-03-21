@@ -14,7 +14,9 @@ body
     /* padding: 0; */
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    /* background-position: top; */
+    background-position-y: top;
+    background-position-x: center;
     width: auto;
     overflow-y: hidden;
 }

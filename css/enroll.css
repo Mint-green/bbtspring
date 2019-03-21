@@ -14,7 +14,9 @@ body
     /* width: 100%; */
     /* overflow:auto; */
     overflow-x: hidden;
-    background-position: top;
+    /* background-position: top; */
+    background-position-y: top;
+    background-position-x: center;
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
