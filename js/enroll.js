@@ -176,11 +176,11 @@ function modification() {
     var name = document.getElementById("name").value;
     var sex = getchoice("gender", "male", "female");
     var grade = getchoice("grade", "gradeOne", "gradeTwo");
-    var college = getselecttext("college");
+    var college = getselecttext("collegeSelect");
     var dorm = document.getElementById("dormitory").value;
     var phonenum = document.getElementById("phone").value;
-    var firstchoose = getselecttext("first");
-    var secondchoose = getselecttext("second");
+    var firstchoose = getselecttext("firstSelect");
+    var secondchoose = getselecttext("secondSelect");
     var yorn = getchoice("adjust", "adjustYes", "adjustNo");
     var selfintro = document.getElementById("introduction").value;
 
